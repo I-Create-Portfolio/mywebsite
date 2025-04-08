@@ -1,0 +1,316 @@
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+
+}
+
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding-top: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+
+
+
+
+
+
+:root {
+  --dark-color-h: 334.29;
+  --dark-color-s: 32.03%;
+  --dark-color-l: 30%;
+  --light-color-h: 19.2;
+  --light-color-s: 30.86%;
+  --light-color-l: 84.12%;
+  --dark-color: hsl(
+    var(--dark-color-h),
+    var(--dark-color-s),
+    var(--dark-color-l)
+  );
+  --light-color: hsl(
+    var(--light-color-h),
+    var(--light-color-s),
+    var(--light-color-l)
+  );
+  --bg-color: var(--dark-color);
+  --text-color: var(--light-color);
+  --resources-bg-color: hsla(
+    var(--dark-color-h),
+    var(--dark-color-s),
+    calc(var(--dark-color-l) - 10%),
+    0.75
+  );
+  --resources-active-color: color-mix(
+    in srgb,
+    var(--light-color) 75%,
+    transparent
+  );
+  --resources-color: var(--text-color);
+}
+
+*,
+::after,
+::before {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: white;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: block;
+  margin: 3rem auto;
+  max-width: 75rem;
+  position: relative;
+  width: calc(100% - 2rem);
+}
+
+simple-masonry {
+  --column-count: 5;
+  --grid-gap-horizontal: 1.5rem;
+  --grid-gap-vertical: 1.5rem;
+  counter-reset: masonry-counter;
+  display: grid;
+  position: relative;
+  width: 100%;
+}
+
+simple-masonry + simple-masonry {
+  margin-top: calc(var(--grid-gap-vertical) * 4);
+}
+
+.grid-item {
+  counter-increment: masonry-counter;
+  grid-area: 1/-1;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-item,
+.grid-item::after {
+  background-color: hsla(
+    var(--dark-color-h),
+    var(--dark-color-s),
+    calc(var(--dark-color-l) - 10%),
+    0.75
+  );
+}
+
+.grid-item a {
+  cursor: pointer;
+}
+
+.grid-item::after {
+  align-items: center;
+  border-radius: 0.125rem;
+  bottom: 0.25rem;
+  color: var(--text-color);
+  content: counter(masonry-counter);
+  display: flex;
+  font-size: 0.625rem;
+  height: 1.5rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  position: absolute;
+  right: 0.25rem;
+  text-align: center;
+  width: 1.5rem;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.resources-layer {
+  bottom: 0;
+  display: block;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+
+.resources {
+  background: var(--resources-bg-color);
+  display: grid;
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 300;
+  grid-auto-flow: column;
+  line-height: 1.3;
+  padding: 0.5rem;
+  pointer-events: auto;
+}
+
+.resources a {
+  align-content: center;
+  display: grid;
+  justify-content: center;
+  padding: 0 0.5rem;
+  place-content: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.resources a,
+.resources a:visited {
+  color: var(--resources-color);
+}
+
+.resources a:active,
+.resources a:focus-visible {
+  color: var(--resources-active-color);
+}
+
+.resources a:focus-visible {
+  outline: none;
+}
+
+.resources a:not(:first-child) {
+  border-inline-start: thin solid currentColor;
+}
+
+@media (max-width: 75.04875em) {
+  simple-masonry {
+    --column-count: 4;
+    --grid-gap-horizontal: 1.25rem;
+    --grid-gap-vertical: 1.25rem;
+  }
+}
+
+@media (max-width: 51.29875em) {
+  simple-masonry {
+    --column-count: 3;
+    --grid-gap-horizontal: 1rem;
+    --grid-gap-vertical: 1rem;
+  }
+}
+
+@media (max-width: 36.04875em) {
+  simple-masonry {
+    --column-count: 2;
+    --grid-gap-horizontal: 0.75rem;
+    --grid-gap-vertical: 0.75rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .resources a:active:not(:hover),
+  .resources a:hover {
+    color: var(--resources-active-color);
+  }
+}
