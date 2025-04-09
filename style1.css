@@ -1,0 +1,339 @@
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.animated-logo-grid {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 0;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 979px) {
+  .animated-logo-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+
+.ohf-title-logo {  margin: 0 auto; }
+.animated-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow:hidden;
+  padding:3vw;
+}
+
+.logo-title {
+  position: absolute;
+  z-index: 2;
+
+}
+
+#title_logo_svg {
+  width: 100%;
+  margin:0 auto;
+  z-index: 1;
+ filter: brightness(0.98);
+  opacity:0.80;
+}
+
+.animated-logo-grid article strong {
+  font-weight: 600;
+  color: #ffe7f0; /* whisper of pink to match your existing palette */
+}
+
+
+.rb-red {
+  fill: red;
+}
+.rb-turquoise {
+  fill: #1b86bc;t;
+}
+.rb-pink {
+  fill: #f13c9d;
+}
+.rb-green {
+  fill: #1e9730;
+}
+.rb-purple {
+  fill: #6f0a82;
+}
+.rb-yellow {
+  fill: #f9e81f;
+}
+.rb-blue {
+  fill: #243796;
+}
+.rb-orange {
+  fill: #f78121;
+}
+.yellow {
+  fill: yellow;
+}
+
+.rotate {
+  animation: rotation 40s linear infinite;
+  filter: brightness(1.25);
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.logo-title h2 {
+  font-size: 3vw;                /* Scales with viewport */
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+  line-height: 1.1;
+  word-break: break-word;       /* Handles longer titles cleanly */
+}
+
+.animated-logo h1,
+.animated-logo h2 {
+  
+   margin: 0;
+  white-space: nowrap;
+  line-height: 1.1;
+  font-weight: 800;
+  font-family: Montserrat;
+  color: #fff;
+  text-shadow:
+      1px 1px 1px rgba(0, 0, 0, 0.6),
+      -1px -1px 0 rgba(255, 255, 255, 0.15);
+  
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+  opacity:0.70;
+  filter: brightness(0.95);
+  
+  
+}
+
+
+.story-date {
+  display: inline-block; /* or 'block' if you want it on its own line */
+  font-size: clamp(1rem, 1vw + 0.5vh, 1.4rem);
+  font-weight: 800;
+  color: hotpink;
+  letter-spacing: 2.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 10px;
+}
+
+
+.logo-title h1 {
+  font-size: 3.8vw; 
+}
+
+.logo-title h2 {
+  font-size: 3vw;
+}
+
+.logo-title h3 {
+  font-size: 2vw;
+}
+
+
+/* 📱 Small screen font size bump */
+@media (max-width: 979px) {
+  .logo-title h1 {
+    font-size: 7vw;
+  }
+
+  .logo-title h2 {
+    font-size: 6.5vw;
+  }
+
+  .logo-title h3 {
+    font-size: 4.5vw;
+  }
+}
+
+
+.animated-logo-grid article {padding:6vw;}
+
+.animated-logo-grid article h1 {
+  font-size: clamp(2rem, 2vw + 2vh, 3.5rem); 
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.animated-logo-grid article h2 {
+  font-size: clamp(1.5rem, 1.75vw + 1.5vh, 2.5rem);
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.animated-logo-grid article h3 {
+  font-size: clamp(1.25rem, 1.5vw + 1vh, 2rem);
+  padding-top: 0.25rem;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+.animated-logo-grid article p {
+  font-size: clamp(1.1rem, 1vw + 0.6vh, 1.6rem);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: rgb(255, 233, 236);
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+  filter: brightness(0.85);
+}
+
+
+
+.animated-logo-grid article h2, .animated-logo-grid article h3 {
+  color: pink;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700 !important;
+	filter: brightness(1.25);
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+}
+
+.animated-logo-grid .ohf-button {margin-top:25px;width:90%;max-width:275px}
+.ohf-button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.75em 1.25em;
+  padding-right: 3.5em;
+  background: rgb(48, 25, 52); 
+color:  pink;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s ease;
+  filter: brightness(0.95);
+  border: none;
+}
+
+.ohf-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    BLACK,
+    #000
+  );
+  z-index: -1;
+  border-radius: 0px;
+  background-size: 300% 100%;
+  transition: background-position 0.8s ease;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+
+/* Animate rainbow border only */
+.ohf-button:hover::before {
+  background-position: 100% 0;
+}
+
+/* Button press effect */
+.ohf-button:active {
+  transform: translateY(2px) scale(0.98);
+  filter: brightness(0.85);
+}
+
+/* Arrow base style */
+.ohf-button::after {
+  content: "\2794";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: WHITE; /* Soft pink */
+  transition: transform 0.3s ease, color 0.3s ease;
+  pointer-events: none;
+}
+
+/* Arrow animation + color change */
+.ohf-button:hover::after {
+  animation: bounceright 0.4s alternate ease-in-out infinite;
+  color: BLACK; /* Hot pink */
+}
+
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ohf-button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0.65em 1em;
+    padding-right: 3em; /* Still room for the arrow */
+  }
+
+  .ohf-button::after {
+    right: 0.75em;
+    font-size: 0.95em;
+  }
+}
+
+
+
+
+
+body {
+  font-family:Montserrat;
+  background-color: #301934;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAAV0lEQVR4AWPg5uaexcDI8B9Ec3JyFhDCpKpnACmGYWI0kKqe9j4AAi0gBtPEaCBZPYggF1NsAYXBR9gCShPAwPuAkgRA30imJR4tKkaLitGiYrSoIAIDAKy7LKCTTHSAAAAAAElFTkSuQmCC");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-bottom:40vh;
+  
+}
