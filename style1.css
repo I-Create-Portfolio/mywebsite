@@ -9,6 +9,8 @@
   gap: 0;
   align-items: center;
   width: 100%;
+  color: #000;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -53,13 +55,13 @@
 
 
 .rb-red {
-  fill: red;
+  fill: #000;
 }
 .rb-turquoise {
-  fill: #1b86bc;t;
+  fill: #000;t;
 }
 .rb-pink {
-  fill: #f13c9d;
+  fill: #000;
 }
 .rb-green {
   fill: #1e9730;
@@ -93,10 +95,10 @@
   }
 }
 .logo-title h2 {
-  font-size: 3vw;                /* Scales with viewport */
+  font-size: 2vw;                /* Scales with viewport */
   font-weight: 700;
   color: white;
-  text-transform: uppercase;
+  text-transform: ;
   letter-spacing: 0.15em;
   margin: 0;
   line-height: 1.1;
@@ -127,19 +129,8 @@
 }
 
 
-.story-date {
-  display: inline-block; /* or 'block' if you want it on its own line */
-  font-size: clamp(1rem, 1vw + 0.5vh, 1.4rem);
-  font-weight: 800;
-  color: hotpink;
-  letter-spacing: 2.5px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
-  margin-bottom: 10px;
-}
-
-
 .logo-title h1 {
-  font-size: 2.8vw; 
+  font-size: 3.0vw; 
 }
 
 .logo-title h2 {
@@ -162,7 +153,7 @@
   }
 
   .logo-title h3 {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -175,7 +166,7 @@
   margin: 0;
   letter-spacing: 1px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: ;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -205,9 +196,8 @@
   margin-bottom: 1.5rem;
   line-height: 1.25;
   letter-spacing: 1px;
-  color: white;
-  font-weight: 800;
-	opacity: 1;
+  color: black;
+  font-weight: 500;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
   filter: brightness(0.85);
 }
@@ -223,7 +213,7 @@
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
 }
 
-.animated-logo-grid .ohf-button {margin-top:25px;width:90%;max-width:350px}
+.animated-logo-grid .ohf-button {margin-top:25px;width:90%;max-width:275px}
 .ohf-button {
   position: relative;
   z-index: 1;
@@ -324,10 +314,17 @@ color:  pink;
     font-size: 0.95em;
   }
 }
+
+
+
+
+
 body {
   font-family:Montserrat;
+  background-color: #301934;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAAV0lEQVR4AWPg5uaexcDI8B9Ec3JyFhDCpKpnACmGYWI0kKqe9j4AAi0gBtPEaCBZPYggF1NsAYXBR9gCShPAwPuAkgRA30imJR4tKkaLitGiYrSoIAIDAKy7LKCTTHSAAAAAAElFTkSuQmCC");
   background-repeat: repeat;
   background-attachment: fixed;
-  padding-bottom:10vh;
+  padding-bottom:40vh;
   
 }
