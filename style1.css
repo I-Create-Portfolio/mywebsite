@@ -324,4 +324,11 @@ color:  pink;
     font-size: 0.95em;
   }
 }
-
+body {
+  font-family:Montserrat;
+  background-color: #301934;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-bottom:10vh;
+  
+}
