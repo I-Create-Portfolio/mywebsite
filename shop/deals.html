@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4,
+    h5 {
+        line-height: 1.5em;
+        margin: 0;
+    }
+
+    hr1 {
+        background: #e9e9e9;
+        border: 0;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 1px;
+        margin: 0;
+        min-height: 1px;
+    }
+
+    .image img {
+        border: 0;
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    input {
+        border: 0;
+        color: inherit;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: normal;
+        margin: 0;
+    }
+
+    p1 {
+        margin: 0;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+    .clearfix:before,
+    .clearfix:after {
+        content: "";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    /* ---------- LIVE-CHAT ---------- */
+
+    #live-chat {
+        bottom: 0;
+        font-size: 12px;
+        right: 24px;
+        position: fixed;
+        width: 300px;
+    }
+
+    #live-chat header {
+        background: #293239;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        cursor: pointer;
+        padding: 16px 24px;
+    }
+
+    #live-chat h4:before {
+        background: #1a8a34;
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        height: 8px;
+        margin: 0 8px 0 0;
+        width: 8px;
+    }
+
+    #live-chat h4 {
+        font-size: 12px;
+    }
+
+    #live-chat h5 {
+        font-size: 10px;
+    }
+
+    #live-chat form {
+        padding: 24px;
+    }
+
+    #live-chat input[type="text"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 8px;
+        outline: none;
+        width: 234px;
+    }
+
+    .chat-message-counter {
+        background: #e62727;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: none;
+        font-size: 12px;
+        font-weight: bold;
+        height: 28px;
+        left: 0;
+        line-height: 28px;
+        margin: -15px 0 0 -15px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 28px;
+    }
+
+
+    .button1 {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 16.5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    /* Start of deals */
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 600px;
+        background-color: WHITE;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Deals table */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Start vouchers */
+
+    .column1 {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        height: 210px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* vouchers table */
+
+    .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column2 {
+        float: left;
+        width: 30%;
+        padding: 5px;
+        height: 350px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* vouchers table */
+
+    .row2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column3 {
+        float: left;
+        width: 40%;
+        padding: 5px;
+        height: 345px;
+    }
+
+    .row2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .header12 {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+
+    .column {
+        -ms-flex: 50%;
+        /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+    /* Style the buttons */
+
+    .btn12 {
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .btn12:hover {
+        background-color: #ddd;
+    }
+
+    .btn12.active {
+        background-color: #666;
+        color: white;
+    }
+
+    .button1 {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 16.5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+</style>
+
+<head>
+    <title>Shop Prints</title>
+    <meta name="viewport" content="width=1366, user-scalable=yes">
+
+    <link rel="stylesheet" type="text/css" href="css/pictzastyle.css">
+</head>
+<script src="js/extjavascript.js">
+
+
+</script>
+
+
+<body>
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+
+
+            <div class="container23" style="margin-left : 120px;
+                margin-right: 35px; display: inline-block;">
+
+                <img src="images/Category/abstract.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                        <div class="text">Abstract</div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/nature.jpg" alt="Avatar" class="image23">
+
+
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                        <div class="text">Nature</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/animals.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                        <div class="text">Animals</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/decorative.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                        <div class="text">Decoratives</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/photo.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                        <div class="text">Photography</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+           
+
+
+
+
+
+
+            <div class="container23" style="margin-left : 120px;
+                margin-right: 35px; display: inline-block;">
+
+                <img src="images/Category/history.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/child.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/scenary.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/landscape.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/conceptual.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+       
+
+
+
+            <div class="container23" style="margin-left : 120px;
+                margin-right: 35px; display: inline-block;">
+
+                <img src="images/Category/fantasy.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/botanical.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/grass.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/magic.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/portrait.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="container23" style="margin-left : 120px;
+                margin-right: 35px; display: inline-block;">
+
+                <img src="images/Category/history.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/child.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/scenary.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/landscape.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/conceptual.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="container23" style="margin-left : 120px;
+                margin-right: 35px; display: inline-block;">
+
+                <img src="images/Category/abstract.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/nature.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/animals.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style=" display: inline-block">
+
+                <img src="images/Category/decorative.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container23" style="margin: 35px; display: inline-block">
+
+                <img src="images/Category/photo.jpg" alt="Avatar" class="image23">
+
+                <div class="overlay34">
+                    <a href="ItemSearch.html">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+          
+
+
+
+            <br>
+
+
+        </div>
+    </div>
+
+    <div class="top-container">
+             <div class="header" id="myHeader">
+                <p align="center">
+                    <font face="Segoe UI Light" size=4>
+                        <a href=index.html> GORDWIN ODHIAMBO </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href=deals.html> PRINT SALE </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="gordwinodhiambo.netlify.app" target = "blank"> BACK TO WEBSITE </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+                       
+                </p>
+            </div>
+            <div class="gallery-item slider-container">
+                <div class="slide-holder">
+
+                    <img src="images/1.jpg">
+                    <img src="images/2.jpg">
+                    <img src="images/3.jpg">
+                    <img src="images/4.jpg">
+                </div>
+
+            </div>
+
+            <div class="deal" style="background-color: WHITE;">
+                <br>
+                <h2 align="center">Prints on Sale</h2>
+
+
+                <div class="content123" tyle="background-color: #FFF;">
+
+
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 30px">
+                            <font color=black face="Segoe UI Light " size=2.5><b> 1 </b></font>
+                        </p>
+                        <img src="images/01.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b> SCHOOL BREAK TIME</b><br>$350
+                        <br><br>
+                        <a href="school-break-time.html"><button class="button1" style="background-color: #2C2C2C;"> Buy Now </button></a>
+                    </div>
+    
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 30px">
+                            <font color=black face="Segoe UI Light " size=2.5><b> 2 </b></font>
+                        </p>
+                        <img src="images/08.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b> BALLET DANCER</b><br>$350
+                        <br><br>
+                        <a href="ballet-dancer.html"><button class="button1" style="background-color: #2C2C2C;"> Buy Now </button></a>
+                    </div>
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 30px">
+                            <font color=black face="Segoe UI Light " size=2.5><b> 3 </b></font>
+                        </p>
+                        <img src="images/forest.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b>PLAYING IN THE FOREST</b><br>$350
+                        <br><br>
+                        <a href="playing-in-the-forest.html"><button class="button1" style="background-color: #2C2C2C;"> Buy Now </button></a>
+                    </div>
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 50px">
+                            <font color=black face="Segoe UI Light " size=2.5><b> 4 </b></font>
+                        </p>
+                        <img src="images/05.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b> Hair Dressers, Kibera, 16/09/19
+           </b><br>$350
+                        <br><br>
+                        <a href="playing-time.html"><button class="button1" style="background-color: #2C2C2C;"> Buy Now </button></a>
+                    </div>
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 50px">
+                            <font color=black face="Segoe UI Light " size=2.5><b>5 </b></font>
+                        </p>
+                        <img src="images/fuuts.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b> FUTWAX IN HIS HOUSE</b><br>$350
+                        <br><br>
+                        <a href="futwax.html"><button class="button1" style="background-color: #2C2C2C;"> Shop Now </button></a>
+                    </div>
+                    <div style="display: inline-block; width:48%;">
+                        <p align=left style="margin-left: 50px">
+                            <font color=black face="Segoe UI Light " size=2.5><b> 6 </b></font>
+                        </p>
+                        <img src="images/print-16.jpg" width="50%" style="margin-left: 50px; margin-right: 30px; float: left; border-radius:  6px"><b> BROTHERS</b><br> $350
+                        <br><br>
+                        <a href="brothers.html"><button class="button1" style="background-color: #2C2C2C;"> Shop Now </button></a>
+                    </div>
+    
+    
+    
+    
+    
+                    <br><br><br><br><br>
+                </div>
+
+                <div style="background-image: url(images/Black-and-White-Background-63.jpg); background-color:black;  background-attachment: fixed; background-position: center; display: block; margin: 0; padding: 0; overflow-x: hidden; margin-bottom: 0px;">
+
+                  
+                   
+
+            
+
+                </div>
+
+
+
+                <div class="content123">
+
+                   
+                    </font>
+            <pre>
+            <p>
+        <b>GOO Studios,
+        House No. 3,
+        Olympic Estate, Kibera
+        Nairobi,(00200-461)
+        Kenya.
+        (gordwin-prints@gmail.com)</b>
+
+        </p>
+    </pre>
+
+            </div>
+
+
+
+
+            
+
+              
+         
+
+
+
+
+
+
+
+                <script>
+                    window.onscroll = function() {
+                        myFunction()
+                    };
+
+                    var header = document.getElementById("myHeader");
+                    var sticky = header.offsetTop;
+
+                    function myFunction() {
+                        if (window.pageYOffset > sticky) {
+                            header.classList.add("sticky");
+                        } else {
+                            header.classList.remove("sticky");
+                        }
+                    }
+
+                </script>
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+
+                </script>
+
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+
+                </script>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot5");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active5", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active5";
+                        setTimeout(showSlides, 3000);
+                        //Changing image time
+                    }
+
+                </script>
+
+
+
+</body>
+
+</html>
