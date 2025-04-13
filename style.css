@@ -97,9 +97,9 @@ footer {
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -143,8 +143,8 @@ footer {
   float: left;
   width: 25%;
   padding-top: 5%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 /* Clear floats after the columns */
@@ -238,6 +238,7 @@ simple-masonry+simple-masonry {
 
 .grid-item {
     background-color: white;
+  opacity: 0.7;
     counter-increment: masonry-counter;
     grid-area: 1/-1;
     overflow: hidden;
