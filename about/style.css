@@ -1,0 +1,72 @@
+body {
+  color: #fff;
+}
+
+section, footer {
+  min-height: 15em;
+  padding: 1em 0;
+
+}
+
+.slogan-text {
+  margin-top: -.5em;
+}
+
+.logo-size {
+  width: 30px;
+  /*height: auto;*/
+}
+
+.heading-font {
+  font-family: 'Vidaloka', serif;
+
+}
+
+#about-me {
+  background-color: white;
+  color: black;
+  margin-top: 72px;
+}
+
+#portfolio-social-media {
+  background-color: #FE1743;
+}
+
+#portfolio-stores {
+  background-color: #07BEFA;
+}
+
+#portfolio-logos {
+  background-color: #FF9D02;
+}
+
+#portfolio-ads {
+  background-color: #825CFF;
+}
+
+.logo-circle {
+  
+  background-color: black;
+  padding: 2px 6px;
+  border-radius: 27%;
+}
+
+footer {
+  color: black;
+}
+
+.text-xl {
+  font-size: 3.5em;
+}
+
+.section-title {
+  margin-bottom: 3.5em;
+}
+
+.icons {
+  font-size: 2rem;
+  
+}
+.icons > a {
+  padding: 0 1em;
+}
