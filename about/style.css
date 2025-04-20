@@ -5,12 +5,8 @@ body {
 
 section, footer {
   min-height: 15em;
-  padding: 1em 0;
+  padding: 0.5em 0;
 
-}
-
-.slogan-text {
-  margin-top: -.5em;
 }
 
 .logo-size {
@@ -48,7 +44,7 @@ section, footer {
 
 .logo-circle {
   
-  background-color: black;
+  background-color: fafafa;
   padding: 2px 6px;
   border-radius: 27%;
 }
