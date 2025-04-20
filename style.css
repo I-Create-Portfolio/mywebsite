@@ -125,8 +125,8 @@ html.no-scroll body {
 
 body {
     background-COLOR: white;
-    color: var(--text-color);
-    font-family: "Roboto", sans-serif;
+    color: white;
+    font-family: font-family: Montserrat;
     line-height: 1.5;
     margin: 0;
     max-width: 100%;
@@ -135,7 +135,7 @@ body {
 
 .wrapper {
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 75rem;
     position: relative;
     width: calc(100% - 1rem);
