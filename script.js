@@ -443,12 +443,9 @@ document.addEventListener("DOMContentLoaded", () => {
             plugins: [lgZoom],
             zoomFromOrigin: false,
             mode: 'lg-fade',
-            mobileSettings: {
-                controls: false,
-                showCloseIcon: false,
-                download: false,
-                rotate: false
-            },
+            share: false,
+    autoplayControls: false,
+    download: false,
            
         });
     }
