@@ -243,6 +243,10 @@ img {
     transition: color .2s ease-in-out;
 }
 
+.resources p {
+   color: white;
+}
+
 .resources a,
 .resources a:visited {
     color: var(--resources-color);
