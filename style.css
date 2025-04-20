@@ -1,8 +1,8 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: black;
-  padding: 10px 10px;
+  background-color: #272727;
+  padding: 5px 5px;
   font-family: Montserrat;
   height: 2%;
 }
@@ -12,10 +12,10 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 18px;
   border-radius: 4px;
   font-family: Montserrat;
 }
