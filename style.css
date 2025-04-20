@@ -61,7 +61,7 @@
 }
 
 .project-stories {
-  width: 65%;
+  width: 55%;
   margin: auto;
   font-family: Montserrat;
 }
@@ -69,6 +69,7 @@
 .project-stories p {
   color:  #424A4D;
   padding: 5px;
+  margin: 1%;
 }
 
 .project-stories h1 {
