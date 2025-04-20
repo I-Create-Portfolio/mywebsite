@@ -60,12 +60,12 @@
   }
 }
 
-project-stories {
+.project-stories {
   width: 50%;
   background-color: #dddddd;
 }
 
-project-stories p {
+.project-stories p {
   width: 50%;
   margin: 5%;
   color: white;
