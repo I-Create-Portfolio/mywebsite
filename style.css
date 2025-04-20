@@ -63,10 +63,11 @@
 .project-stories {
   width: 50%;
   background-color: #dddddd;
+  margin: auto;
 }
 
 .project-stories p {
-  width: 50%;
+  width: 60%;
   margin: 5%;
   color: white;
   padding: 10;
