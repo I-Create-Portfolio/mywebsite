@@ -155,12 +155,11 @@ simple-masonry+simple-masonry {
 }
 
 .grid-item {
-    background-color: transparent;
-    
+    background-color: white;
+    counter-increment: masonry-counter;
     grid-area: 1/-1;
     overflow: hidden;
     position: relative;
-  
 }
 
 .grid-item a {
@@ -171,7 +170,7 @@ simple-masonry+simple-masonry {
     align-items: center;
     background-color: black;
     border-radius: .125rem;
-    bottom: 2rem;
+    bottom: .25rem;
     color: var(--text-color);
     content: counter(masonry-counter);
     display: flex;
@@ -188,7 +187,7 @@ simple-masonry+simple-masonry {
 img {
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2pt;
+    border: 0;
     color: transparent;
     display: block;
     font: 0/0 a;
@@ -197,7 +196,7 @@ img {
     -o-object-fit: cover;
     object-fit: cover;
     outline: none;
-    padding: 10px 10px;
+    padding: 0;
     position: relative;
     text-shadow: none;
     -webkit-user-select: none;
@@ -209,9 +208,7 @@ img {
 
 .lg-backdrop {
     background-color: white;
-    opacity: 0.6;
 }
-
 .resources-layer {
     bottom: 0;
     display: block;
