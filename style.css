@@ -142,7 +142,7 @@ body {
 }
 
 simple-masonry {
-    --column-count: 5;
+    --column-count: 4;
     --grid-gap-horizontal: 1.5rem;
     --grid-gap-vertical: 1.5rem;
     counter-reset: masonry-counter;
