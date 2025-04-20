@@ -1,5 +1,6 @@
 body {
   color: #fff;
+  font-family: Montserrat;
 }
 
 section, footer {
@@ -18,7 +19,7 @@ section, footer {
 }
 
 .heading-font {
-  font-family: 'Vidaloka', serif;
+  font-family: Montserrat;
 
 }
 
@@ -60,7 +61,7 @@ footer {
 }
 
 .section-title {
-  margin-bottom: 3.5em;
+  margin-bottom: 1.5em;
 }
 
 .icons {
