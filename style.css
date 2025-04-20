@@ -62,11 +62,15 @@
 
 project-stories {
   width: 50%;
+  background-color: #dddddd;
 }
 
 project-stories p {
   width: 50%;
   margin: 5%;
+  color: white;
+  padding: 10;
+  top: 10;
 }
 
 .column {
