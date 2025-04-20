@@ -60,6 +60,15 @@
   }
 }
 
+project-stories {
+  width: 50%;
+}
+
+project-stories p {
+  width: 50%;
+  margin: 5%;
+}
+
 .column {
   float: left;
   width: 25%;
