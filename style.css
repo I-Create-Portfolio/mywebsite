@@ -5,6 +5,7 @@
   padding: 5px 5px;
   font-family: Montserrat;
   height: 3.6%;
+  position: sticky;
 }
 
 /* Style the header links */
