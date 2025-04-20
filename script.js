@@ -436,19 +436,6 @@ customElements.define("simple-masonry", SimpleMasonry);
 document.addEventListener("DOMContentLoaded", () => {
 
     const masonry = document.querySelector("#test-simple-masonry-01");
-
-    if (masonry) {
-        window.lightGallery(masonry, {
-            selector: '.lightgallery',
-            plugins: [lgZoom],
-            zoomFromOrigin: false,
-            mode: 'lg-fade',
-            mobileSettings: {
-                controls: false,
-                showCloseIcon: false,
-                download: false,
-                rotate: false
-            },
            
         });
     }
