@@ -1,3 +1,8 @@
+lightGallery(document.getElementById('lightgallery'),{
+    share: false,
+    autoplayControls: false,
+    download: false
+
 class SimpleMasonry extends HTMLElement {
     #columnCount = null;
     #elementHeights = [];
