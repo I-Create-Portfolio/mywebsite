@@ -24,9 +24,10 @@ section, footer {
 }
 
 #about-me {
-  background-color: white;
+  background-color: fafafa;
   color: black;
   margin-top: 72px;
+  font-family: Montserrat;
 }
 
 #portfolio-social-media {
