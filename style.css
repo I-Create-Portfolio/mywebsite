@@ -125,17 +125,17 @@ html.no-scroll body {
 
 body {
     background-COLOR: white;
-    color: white;
-    font-family: font-family: Montserrat;
+    color: black;
+    font-family: Montserrat;
     line-height: 1.5;
-    margin: 0;
+    margin: 10;
     max-width: 100%;
     width: 100%;
 }
 
 .wrapper {
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
     max-width: 75rem;
     position: relative;
     width: calc(100% - 1rem);
