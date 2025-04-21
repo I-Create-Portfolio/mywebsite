@@ -6,6 +6,7 @@
   top: 0;
  bottom: 10;
  z-index: 12;
+ height: 50px;
 }
 
 
@@ -31,7 +32,7 @@
   color: #dddddd;
   float: left;
   font-size: 18px;
- text-decoration: bold;
+ text-style: bold;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
