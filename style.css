@@ -27,7 +27,7 @@
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+.topnav a.logo {
   color: white;
   float: left;
 }
