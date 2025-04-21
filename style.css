@@ -185,7 +185,8 @@ a {
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
-  z-inde
+  z-index: 13;
+  visibility: visible;
 }
 
 .dropdown__arrow {
