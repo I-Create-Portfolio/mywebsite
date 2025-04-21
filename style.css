@@ -71,7 +71,7 @@ a {
   width: 100%;
   background-color: var(--black-color);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
-  z-index: var(--z-fixed);
+  z-index: 12);
 }
 
 /*=============== NAV ===============*/
@@ -185,6 +185,7 @@ a {
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
+  z-inde
 }
 
 .dropdown__arrow {
