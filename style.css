@@ -4,6 +4,7 @@
   overflow: hidden;
  position: sticky;
   top: 0;
+ z-index: 12;
 }
 
 
@@ -26,7 +27,6 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
   color: white;
  float: left;
 }
