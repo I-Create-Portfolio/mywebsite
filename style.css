@@ -179,7 +179,7 @@ a {
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
-  z-index: 13;
+  z-index: 130;
   visibility: visible;
 }
 
@@ -199,6 +199,7 @@ a {
   column-gap: .5rem;
   font-weight: var(--font-semi-bold);
   transition: background-color .3s;
+  visibility: visible;
 }
 
 .dropdown__link i, 
