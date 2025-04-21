@@ -6,7 +6,7 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -25,6 +25,7 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+ float: left;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
