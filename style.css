@@ -15,7 +15,7 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px 16px;
   text-decoration: none;
   font-size: 15px;
 }
@@ -27,9 +27,10 @@
 }
 
 /* Add an active class to highlight the current page */
-.topnav logo {
-  color: white;
+.topnav a.logo {
+  color: #dddddd;
   float: left;
+  font-size: 18px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
