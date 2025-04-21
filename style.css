@@ -1,14 +1,4 @@
 
-
-nav{
-  position:fixed;
-  left:0;right:0;top:0;
-  height:50px;
-  background: black;
-  box-shadow:0 0px 9px 4px rgba(#000, .1), 0 -5px 2px 2px rgba(#000, .1);
-  z-index:1000;
-  min-width:580px;
-  bottom: 10;
   
   .logo{
     position:relative;
