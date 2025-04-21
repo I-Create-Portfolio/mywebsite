@@ -1,4 +1,75 @@
- /* Add a black background color to the top navigation */
+body {
+  color: #fff;
+  font-family: Montserrat;
+}
+
+section, footer {
+  min-height: 15em;
+  padding: 0.2em 0;
+
+}
+
+.logo-size {
+  width: 30px;
+  /*height: auto;*/
+}
+
+.heading-font {
+  font-family: Montserrat;
+
+}
+
+#about-me {
+  background-color: fafafa;
+  color: black;
+  margin-top: 72px;
+  font-family: Montserrat;
+}
+
+#portfolio-social-media {
+  background-color: fafafa;
+}
+
+#portfolio-stores {
+  background-color: fafafa;
+}
+
+#portfolio-logos {
+  background-color: fafafa;
+}
+
+#portfolio-ads {
+  background-color: #825CFF;
+}
+
+.logo-circle {
+  
+  background-color: fafafa;
+  padding: 2px 6px;
+  border-radius: 27%;
+}
+
+footer {
+  color: black;
+}
+
+.text-xl {
+  font-size: 3.5em;
+}
+
+.section-title {
+  margin-bottom: 1.5em;
+}
+
+.icons {
+  font-size: 2rem;
+  
+}
+.icons > a {
+  padding: 0 1em;
+}
+
+/* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
