@@ -2,7 +2,10 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
+ position: sticky;
+  top: 0;
 }
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
