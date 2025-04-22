@@ -131,6 +131,7 @@ img {
             position: absolute;
             content: '';
             width: 100%;
+            z-index: 9999;
             height: 0.18rem;
             left: 0;
             top: 2rem;
@@ -153,7 +154,7 @@ img {
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
-    z-index: 10;
+    z-index: 9999;
 }
 
 .home { height: calc(100vh - 3rem); row-gap: 1rem; }
