@@ -668,11 +668,19 @@ a {
 
 @media only screen and (max-width: 480px) {
 
-   project-stories { 
+   .project-stories { 
       width: 90%; 
    }
 
 }
+
+@media only screen and (min-width: 768px) {
+    .project-stories { 
+      width: 80%; 
+   }
+
+}
+
 
 .column {
   float: left;
