@@ -142,7 +142,7 @@ img {
     color: var(--second-color);
     font-size: 2rem;
     cursor: pointer;
-  z-index: var(--z-fixed);
+  z-index: 10;
 }
 
 .active::after {
@@ -153,12 +153,13 @@ img {
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
+    z-index: 10;
 }
 
 .home { height: calc(100vh - 3rem); row-gap: 1rem; }
 .home-data { align-self: center; }
 .home-title { font-size: var(--big-font-size); margin-bottom: var(--mb5); }
-.home-title-color { color: var(--first-color); }
+.home-title-color { color: black; }
 .home-social { display: flex; flex-direction: column; }
 .home-social-icon {
     width: max-content;
