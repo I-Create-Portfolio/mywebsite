@@ -54,7 +54,7 @@ body {
     color: var(--second-color);
 }
 
-h1, h2, p { margin: 0; }
+h1, h2, p { margin: 10; }
 
 ul {
     margin: 0;
@@ -140,7 +140,7 @@ img {
 .nav-logo { color: var(--second-color); }
 .nav-toggle {
     color: var(--second-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -364,8 +364,6 @@ img {
 
     .show { right: 0; }
 }
-
-
 
 .logo-circle {
   
