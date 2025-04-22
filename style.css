@@ -666,7 +666,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
 
    .project-stories { 
       width: 90%; 
@@ -676,7 +676,7 @@ a {
 
 @media only screen and (min-width: 768px) {
     .project-stories { 
-      width: 80%; 
+      width: 55%; 
    }
 
 }
