@@ -8,6 +8,10 @@ section, footer {
   padding: 0.2em 0;
 
 }
+
+.welcome-text {
+  padding-top: 200px;
+}
 .project-stories {
   padding-top: 80px;
 }
