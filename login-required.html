@@ -12,6 +12,7 @@
 <meta name="format-detection" content="telephone=no"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css'><link rel="stylesheet" href="./style.css">
 
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -30,16 +31,29 @@ A custom web component for creating a **responsive, optimized masonry grid** wit
 - **Animations**: Configurable animation duration and easing for desktop devices (disabled on touch for performance).
 - **Mutation Observer**: Automatically updates when child elements are added or removed.
 -->
- <div class="header">
-  <a href="index.html" class="logo">GORDWIN ODHIAMBO</a>
-  <div class="header-right">
-    <a href="index.html">HOME</a>
-    <a href="work.html">WORK</a>
-    <a href="commision.html">COMMISION</a>
-    <a href="books.html">BOOKS</a>
-    <a href="about/bio.html">BIO</a>
-  </div>
-</div> 
+  <header class="l-header">
+
+     <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav-logo">GORDWIN ODHIAMBO</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="work.html" class="nav-link">WORK</a></li>
+                    <li class="nav-item"><a href="commisions.html" class="nav-link">COMISSIONS</a></li>
+                    <li class="nav-item"><a href="bio.html" class="nav-link">BIO</a></li>
+                    <li class="nav-item"><a href="books.html" class="nav-link">BOOKS</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+</header>
 
 <div class="login-box">
   <h2>Login | or Please Request Password</h2>
