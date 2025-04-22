@@ -84,7 +84,7 @@ footer {
 
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
-    --h2-font-size: 1.25rem;
+    --h2-font-size: 0.75rem;
     --normal-font-size: .938rem;
 
     --mb1: .5rem;
@@ -118,7 +118,8 @@ body {
     color: var(--second-color);
 }
 
-h1, h2, p { margin: 0; }
+h1, h2, p { margin: 10;
+          }
 
 ul {
     margin: 0;
