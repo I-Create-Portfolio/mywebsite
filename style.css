@@ -1394,3 +1394,41 @@ header
 }
 
 
+
+
+.wrapper {
+  width: 600px;
+  margin: 60px auto;
+}
+
+.player {
+  width: 600px;
+  height: 337px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  video {
+    width: 600px;
+    height: 337px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 10px solid #000;
+    box-shadow: 0 0 10px #000;
+  }
+  canvas {
+    position: absolute;
+    width: 600px;
+    height: 337px;
+    transform: scale(1.2);
+    -webkit-filter: blur(50px);
+    opacity: 0.75;
+    z-index: -1;
+  }
+}
+
+
