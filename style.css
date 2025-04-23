@@ -793,7 +793,7 @@ simple-masonry+simple-masonry {
     background-color: black;
     border-radius: .125rem;
     bottom: .25rem;
-    color: var(--text-color);
+    color: black;
     content: counter(masonry-counter);
     display: flex;
     font-size: .325rem;
