@@ -19,6 +19,16 @@ section, footer {
 
 .profile-photo {
   display: flex;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+
+.profile-photo img {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 50%;
