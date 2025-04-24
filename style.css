@@ -20,7 +20,7 @@ section, footer {
 
 .profile-photo {
   display: flex;
-  height: 440px;
+  height: 420px;
   width: 460;
   justify-content: center;
   align-items: center;
