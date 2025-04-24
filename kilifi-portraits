@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GORDWIN ODHIAMBO - NEW YORK | LONDON | CALIFORNIA</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+       
+
+</head>
+<body>
+    <header class="l-header">
+
+     <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav-logo">GORDWIN ODHIAMBO</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="work.html" class="nav-link">WORK</a></li>
+                    <li class="nav-item"><a href="commisions.html" class="nav-link">COMISSIONS</a></li>
+                    <li class="nav-item"><a href="about-me.html" class="nav-link">BIO</a></li>
+                    <li class="nav-item"><a href="about/books.html" class="nav-link">BOOKS</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+</header>   
+
+<div class="project-stories">
+  <h1>Portraits from Kilifi</h1>
+  
+  <p>
+
+<h1>Gordwin Odhiambo</h1>
+
+<h1>2017 - Ongoing</h1>
+</p>
+</div>
+<div class="wrapper">
+  <simple-masonry id="test-simple-masonry-01" data-use-column-count="true" data-dense-placement="true" data-animate-on-resize="true" data-gap-horizontal="--grid-gap-horizontal" data-gap-vertical="--grid-gap-vertical">
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/136.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/136.jpg" loading="lazy" alt="Christina Lewis at The Clown School of San Francisco - 2019">
+      </a>
+    </div>
+     <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-3.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-3.jpg" loading="lazy" alt="Christina Lewis at The Clown School of San Francisco - 2019">
+      </a>
+    </div>
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc.jpg" loading="lazy" alt="The 30th annual Pet Parade hosted by Farley's took place on October 26, 2019, at Farley's on 18th Street">
+      </a>
+    </div>
+     <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-14.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-14.jpg" loading="lazy" alt="The 30th annual Pet Parade hosted by Farley's took place on October 26, 2019, at Farley's on 18th Street"">
+      </a>
+    </div>
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-1.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-1.jpg" loading="lazy" alt="The Clown School of San Francisco">
+      </a>
+    </div>
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-2.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-2.jpg" loading="lazy" alt="The Clown School of San Francisco">
+      </a>
+    </div>
+    
+ 
+  <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-10.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-10.jpg" loading="lazy" alt="Serena's Room - UC Berkeley">
+      </a>
+    </div>
+  <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-11.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-11.jpg" loading="lazy" alt="Serena's Room - UC Berkeley">
+      </a>
+    </div>
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-12.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-12.jpg" loading="lazy" alt="UC Berkeley - Wilde House, formerly known as Johnson-Rivera House, is a student-run co-op that is the first gay-themed cooperative housing on any campus in the country">
+      </a>
+    </div>
+    <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-13.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-13.jpg" loading="lazy" alt="Stanford Training Grounds">
+      </a>
+    </div>
+   
+  <div class="grid-item" style="aspect-ratio:16/9;">
+      <a data-src="images/nlc-15.jpg" class="lightgallery" data-lg-size="1024-1024">
+        <img src="images/nlc-15.jpg" loading="lazy" alt="UC Berkeley">
+      </a>
+    </div>
+
+  </simple-masonry>
+
+</div>
+
+
+<div class="resources-layer">
+  <div class="resources">
+    <a href="https://x.com/gordwin___" target = "blank">X</a>
+    <a href="https://www.instagram.com/gordwin_docu_photo/?hl=en" target = "blank">LinkedIn</a>
+    <a href="https://www.youtube.com/@gordwinodhiambo1710" target = "blank">YouTube</a>
+    <a href="https://www.instagram.com/gordwin_docu_photo/?hl=en" TARGET = "BLANK">Instagram</a>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://assets.codepen.io/573855/lr-utils.js?v=6'></script>
+<script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
