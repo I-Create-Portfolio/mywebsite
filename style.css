@@ -850,6 +850,7 @@ img {
 
 .lg-backdrop {
     background-color: white;
+  color: black;
 }
 .resources-layer {
     bottom: 0;
@@ -1443,7 +1444,7 @@ header
     height: 337px;
     transform: scale(1.2);
     -webkit-filter: blur(50px);
-    opacity: 0.75;
+    
     z-index: -1;
   }
 }
