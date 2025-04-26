@@ -42,7 +42,27 @@
 
         </nav>
 </header>
+<div class="toggle-switch">
+  <label>
+    <input type="radio" name="wordType" value="nouns" checked>
+    <span class="slider">Nouns</span>
+  </label>
+  <label>
+    <input type="radio" name="wordType" value="verbs">
+    <span class="slider">Verbs</span>
+  </label>
+  <label>
+    <input type="radio" name="wordType" value="study">
+    <span class="slider">Study</span>
+  </label>
+</div>
 
+<div class="carousel">
+  <button id="prevBtn">&#8592;</button>
+  <ul class="carousel-track"></ul>
+  <button id="nextBtn">&#8594;</button>
+</div>
+<button id="saveBtn">Save to Study List</button>
 
 <div class="resources-layer">
   <div class="resources">
