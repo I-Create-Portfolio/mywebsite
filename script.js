@@ -548,3 +548,366 @@ window.onload = function() {
     stopTimer();
   });
 }
+
+
+
+
+
+
+const nounPairs = [
+  ["l'amitié (f)", "friendship"],
+  ["la pensée", "thought"],
+  ["la sculpture", "sculpture"],
+  ["la boutique", "shop"],
+  ["la paix", "peace"],
+  ["la note", "grade"],
+  ["la décision", "decision"],
+  ["la classe", "class"],
+  ["le rêve", "dream"],
+  ["l'information (f)", "information"],
+  ["le tableau", "painting/canvas"],
+  ["la liberté", "freedom"],
+  ["le niveau", "level"],
+  ["le progrès", "progress"],
+  ["le concert", "concert"],
+  ["le livre", "book"],
+  ["le crime", "crime"],
+  ["le sentiment", "feeling"],
+  ["le film", "movie"],
+  ["le système", "system"],
+  ["le produit", "product"],
+  ["la santé", "health"],
+  ["le chapitre", "chapter"],
+  ["le point de vue", "point of view"],
+  ["le marché", "market"],
+  ["le gouvernement", "government"],
+  ["le besoin", "need"],
+  ["la vérité", "truth"],
+  ["la matière", "subject"],
+  ["la culture", "culture"],
+  ["l'expression (f)", "expression"],
+  ["la traduction", "translation"],
+  ["le client", "customer"],
+  ["la musique", "music"],
+  ["le respect", "respect"],
+  ["l'artiste (m/f)", "artist"],
+  ["la photo", "photo"],
+  ["le projet", "project"],
+  ["la mémoire", "memory"],
+  ["le mot", "word"],
+  ["le temps", "time"],
+  ["la page", "page"],
+  ["le spectacle", "show"],
+  ["le chanteur", "singer (male)"],
+  ["le sens", "meaning"],
+  ["la scène", "stage/scene"],
+  ["l'image (f)", "image"],
+  ["l'ordinateur (m)", "computer"],
+  ["la phrase", "sentence"],
+  ["la méthode", "method"],
+  ["la langue", "language"],
+  ["le service", "service"],
+  ["le débat", "debate"],
+  ["le travail", "work"],
+  ["le bonheur", "happiness"],
+  ["le choix", "choice"],
+  ["la solution", "solution"],
+  ["la chanson", "song"],
+  ["le conseil", "advice"],
+  ["le voyage", "trip"],
+  ["le temps", "time"],
+  ["la peinture", "painting"],
+  ["la demande", "request"],
+  ["le chapitre", "chapter"],
+  ["l'objectif (m)", "goal"],
+  ["l'achat (m)", "purchase"],
+  ["le dictionnaire", "dictionary"],
+  ["la galerie", "gallery"],
+  ["le résultat", "result"],
+  ["la jeunesse", "youth"],
+  ["le professeur", "teacher"],
+  ["l'université (f)", "university"],
+  ["le chanteur", "singer (male)"],
+  ["la chanteuse", "singer (female)"],
+  ["l'échec (m)", "failure"],
+  ["l'expérience (f)", "experience"],
+  ["la maison", "house"],
+  ["l'élève (m/f)", "student"],
+  ["le cours", "course"],
+  ["le développement", "development"],
+  ["l'offre (f)", "offer"],
+  ["le sujet", "subject"],
+  ["le rêve", "dream"],
+  ["le problème", "problem"],
+  ["la loi", "law"],
+  ["le spectacle", "show"],
+  ["le progrès", "progress"],
+  ["le tableau", "painting/canvas"],
+  ["le système", "system"],
+  ["le respect", "respect"],
+  ["la page", "page"],
+  ["la peinture", "painting"],
+  ["le projet", "project"],
+  ["la galerie", "gallery"],
+  ["la mémoire", "memory"],
+  ["le conseil", "advice"],
+  ["le voyage", "trip"],
+  ["le rêve", "dream"],
+  ["la décision", "decision"],
+  ["la traduction", "translation"],
+  ["la santé", "health"],
+  ["la boutique", "shop"],
+  ["le film", "movie"],
+  ["la paix", "peace"],
+  ["la culture", "culture"],
+];
+
+const verbPairs = [
+    ["travailler", "to work"],
+  ["s'intéresser", "to be interested"],
+  ["avoir (irr)", "to have"],
+  ["apprendre (irr)", "to learn"],
+  ["ignorer", "to ignore"],
+  ["rester", "to stay"],
+  ["regarder", "to watch/look at"],
+  ["se coucher", "to go to bed"],
+  ["descendre", "to go down"],
+  ["chanter", "to sing"],
+  ["payer", "to pay"],
+  ["se brosser", "to brush (oneself)"],
+  ["pouvoir (irr)", "to be able to"],
+  ["s'amuser", "to have fun"],
+  ["croire (irr)", "to believe"],
+  ["utiliser", "to use"],
+  ["détester", "to hate"],
+  ["partir", "to leave"],
+  ["venir (irr)", "to come"],
+  ["connaître (irr)", "to know (someone)"],
+  ["tomber", "to fall"],
+  ["dessiner", "to draw"],
+  ["dormir", "to sleep"],
+  ["perdre", "to lose"],
+  ["se lever", "to get up"],
+  ["ouvrir (irr)", "to open"],
+  ["compter", "to count"],
+  ["voir (irr)", "to see"],
+  ["dire (irr)", "to say/tell"],
+  ["lire (irr)", "to read"],
+  ["se réveiller", "to wake up"],
+  ["refuser", "to refuse"],
+  ["courir (irr)", "to run"],
+  ["peindre", "to paint"],
+  ["chanter", "to sing"],
+  ["expliquer", "to explain"],
+  ["accepter", "to accept"],
+  ["savoir (irr)", "to know (a fact)"],
+  ["finir", "to finish"],
+  ["se laver", "to wash oneself"],
+  ["envoyer", "to send"],
+  ["rire (irr)", "to laugh"],
+  ["prier", "to pray"],
+  ["s'ennuyer", "to get bored"],
+  ["se souvenir", "to remember"],
+  ["visiter", "to visit"],
+  ["boire", "to drink"],
+  ["fermer", "to shut"],
+  ["nettoyer", "to clean"],
+  ["adorer", "to adore"],
+  ["mettre (irr)", "to put"],
+  ["comprendre (irr)", "to understand"],
+  ["faire (irr)", "to do/make"],
+  ["jouer", "to play"],
+  ["habiter", "to reside"],
+  ["arriver", "to arrive"],
+  ["répondre", "to answer"],
+  ["plaire", "to please"],
+  ["naître", "to be born"],
+  ["organiser", "to organize"],
+  ["acheter", "to buy"],
+  ["monter", "to go up"],
+  ["changer", "to change"],
+  ["se promener", "to take a walk"],
+  ["espérer", "to hope"],
+  ["vendre", "to sell"],
+  ["parler", "to speak"],
+  ["étudier", "to study"],
+  ["téléphoner", "to call"],
+  ["préférer", "to prefer"],
+  ["souhaiter", "to wish"],
+  ["aller (irr)", "to go"],
+  ["entendre", "to hear"],
+  ["remplir", "to fill"],
+  ["être (irr)", "to be"],
+  ["voyager", "to travel"],
+  ["jeter", "to throw"],
+  ["marcher", "to walk"],
+  ["choisir", "to choose"],
+  ["se reposer", "to rest"],
+  ["vêtir", "to clothe"],
+  ["conduire", "to drive"],
+  ["essayer", "to try"],
+  ["raconter", "to tell/narrate"],
+  ["gagner", "to win/earn"],
+  ["valoir", "to be worth"],
+  ["exister", "to exist"],
+  ["penser", "to think"],
+  ["demander", "to ask"],
+  ["recevoir (irr)", "to receive"],
+  ["aider", "to help"],
+  ["obéir", "to obey"],
+  ["se dépêcher", "to hurry"],
+  ["prêter", "to lend"],
+  ["cuisiner", "to cook"],
+  ["arrêter", "to stop"],
+  ["changer", "to change"],
+  ["revenir", "to come back"],
+  ["reconnaître", "to recognize"],
+  ["retourner", "to return"],
+  ["voir (irr)", "to see"],
+  ["s'habiller", "to get dressed"],
+  ["commencer", "to start"],
+  ["vivre (irr)", "to live"],
+  ["se sentir", "to feel"]
+];
+const studyListKey = "studyWords";
+
+let currentMode = "nouns"; // "nouns", "verbs", or "study"
+// Load from localStorage (or fallback to empty array)
+function loadStudyList() {
+  return JSON.parse(localStorage.getItem(studyListKey)) || [];
+}
+
+// Save to localStorage
+function saveStudyList(list) {
+  localStorage.setItem(studyListKey, JSON.stringify(list));
+}
+
+let studyList = loadStudyList();
+
+const saveBtn = document.getElementById("saveBtn");
+
+saveBtn.addEventListener("click", () => {
+  const [fr, en] = currentSet[currentIndex];
+  const index = studyList.findIndex(pair => pair[0] === fr && pair[1] === en);
+
+  if (currentMode === "study") {
+    if (index > -1) {
+      studyList.splice(index, 1);
+      saveStudyList(studyList);
+      saveBtn.classList.add("flash-delete");
+setTimeout(() => {
+  saveBtn.classList.remove("flash-delete");
+}, 600);
+      currentSet = studyList.length ? studyList : [["(none)", "(empty)"]];
+      renderCarousel(currentSet);
+    } else {
+      alert("This word is not in your study list.");
+    }
+  } else {
+    if (index === -1) {
+      studyList.push([fr, en]);
+      saveStudyList(studyList);
+      saveBtn.classList.add("flash-success");
+setTimeout(() => {
+  saveBtn.classList.remove("flash-success");
+}, 600);
+    } else {
+      alert("Already in study list.");
+    }
+  }
+});
+
+
+const ul = document.querySelector(".carousel-track");
+const radios = document.querySelectorAll("input[name='wordType']");
+
+let currentIndex = 0;
+let currentSet = nounPairs;
+
+function renderCarousel(pairs) {
+  ul.innerHTML = "";
+  currentIndex = 0;
+
+  const shuffled = pairs.sort(() => 0.5 - Math.random());
+  shuffled.forEach(([fr, en]) => {
+    const li = document.createElement("li");
+    li.classList.add("flip-card");
+    li.innerHTML = `
+      <div class="flip-inner">
+        <div class="flip-front"><p>${fr}</p></div>
+        <div class="flip-back"><p>${en}</p></div>
+      </div>`;
+    ul.appendChild(li);
+  });
+
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const cards = ul.querySelectorAll("li");
+  cards.forEach((card, i) => {
+    card.style.transform = `translateX(${(i - currentIndex) * 100}%)`;
+  });
+}
+
+// Navigation
+function nextCard() {
+  const total = ul.querySelectorAll("li").length;
+  currentIndex = (currentIndex + 1) % total;
+  updateCarousel();
+}
+function prevCard() {
+  const total = ul.querySelectorAll("li").length;
+  currentIndex = (currentIndex - 1 + total) % total;
+  updateCarousel();
+}
+
+document.getElementById("nextBtn").addEventListener("click", nextCard);
+document.getElementById("prevBtn").addEventListener("click", prevCard);
+
+// Swipe
+let startX = 0;
+ul.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+ul.addEventListener("touchend", e => {
+  const delta = e.changedTouches[0].clientX - startX;
+  if (Math.abs(delta) > 50) delta < 0 ? nextCard() : prevCard();
+});
+
+// Keyboard
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") nextCard();
+  if (e.key === "ArrowLeft") prevCard();
+});
+
+// Mode toggle
+radios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    currentMode = radio.value;
+
+    if (currentMode === "nouns") {
+      currentSet = nounPairs;
+      saveBtn.textContent = "Save to Study List";
+      saveBtn.classList.remove('remove');
+    } else if (currentMode === "verbs") {
+      currentSet = verbPairs;
+      saveBtn.textContent = "Save to Study List";
+      saveBtn.classList.remove('remove');
+    } else if (currentMode === "study") {
+      studyList = loadStudyList();
+      currentSet = studyList.length ? studyList : [["(none)", "(empty)"]];
+      saveBtn.textContent = "Remove from Study List";
+      saveBtn.classList.add('remove');
+    }
+
+    renderCarousel(currentSet);
+  });
+});
+
+
+renderCarousel(currentSet);
