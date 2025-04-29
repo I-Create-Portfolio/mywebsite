@@ -14,13 +14,13 @@ section, footer {
   left: 20;
 }
 .project-stories {
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: justify;
 }
 
 .profile-photo {
   display: flex;
-  width: 460;
+  width: 470;
   justify-content: center;
   align-items: center;
 
