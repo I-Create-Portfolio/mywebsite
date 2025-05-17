@@ -26,6 +26,13 @@ section, footer {
 
 }
 
+.figcaption {
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: right;
+}
+
 .profile-photo img {
   display: flex;
   justify-content: center;
