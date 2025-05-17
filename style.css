@@ -159,7 +159,7 @@ img {
     font-weight: var(--font-semi);
 }
 
-.nav-item { margin-bottom: var(--mb4); }
+.nav-item { margin-bottom: var(--mb4); font-size: 12px;}
 .nav-link { position: relative; color: #ffffff; }
     .nav-link:hover { position: relative; }
         .nav-link:hover::after {
