@@ -18,7 +18,7 @@ section, footer {
   text-align: justify;
 }
 
-.figure {
+.profile-photo {
   display: flex;
   width: 470;
   justify-content: center;
@@ -30,7 +30,7 @@ section, footer {
   color: black;
   font-style: italic;
   padding: 2px;
-  text-align: right;
+  text-align: left;
 }
 
 .profile-photo img {
