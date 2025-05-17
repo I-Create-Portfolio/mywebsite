@@ -122,6 +122,14 @@ button:focus { outline: none; }
     height: 40px;
 }
 
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
 .cd-slider-nav .nav-item.selected .nav-link,
 .cd-slider-nav .nav-link:hover,
 .cd-slider-nav .nav-link:focus {
