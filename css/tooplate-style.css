@@ -122,12 +122,11 @@ button:focus { outline: none; }
     height: 40px;
 }
 
-figcaption {
-  background-color: black;
-  color: white;
+.figcaption {
+  color: black;
   font-style: italic;
   padding: 2px;
-  text-align: center;
+  text-align: right;
 }
 
 .cd-slider-nav .nav-item.selected .nav-link,
