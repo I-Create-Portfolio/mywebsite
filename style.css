@@ -18,7 +18,7 @@ section, footer {
   text-align: justify;
 }
 
-.profile-photo {
+.figure {
   display: flex;
   width: 470;
   justify-content: center;
