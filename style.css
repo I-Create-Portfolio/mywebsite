@@ -795,7 +795,6 @@ simple-masonry+simple-masonry {
 
 .grid-item {
     background-color: white;
-  opacity: 0.5;
     counter-increment: masonry-counter;
     grid-area: 1/-1;
     overflow: hidden;
@@ -812,7 +811,7 @@ simple-masonry+simple-masonry {
     border-radius: .125rem;
     bottom: .25rem;
     color: black;
-    content: counter(masonry-counter);
+   
     display: flex;
     font-size: .325rem;
     height: 1.5rem;
