@@ -848,6 +848,7 @@ img {
 .lg-backdrop {
     background-color: white;
   color: black;
+  opacity: 1;
 }
 .resources-layer {
     bottom: 0;
