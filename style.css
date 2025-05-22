@@ -1178,33 +1178,6 @@ body {
 
 
 
-:root {
-	--size-header: 2.25rem;
-	--size-accordion-title: 1.25rem;
-	--size-accordion-content: 1rem;
-	--animation-speed: 100;
-	--slide-ease: cubic-bezier(0.86, 0, 0.07, 1);
-	--slide-duration: calc(400ms * 100 / var(--animation-speed));
-	--slide-delay: calc(450ms * 100 / var(--animation-speed));
-	--circle-duration: calc(900ms * 100 / var(--animation-speed));
-}
-
-
-
-
-
-
-
-main > h1 {
-	font-size: var(--size-header);
-	margin-bottom: 1.25rem;
-	color: #fff;
-}
-
-::selection {
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
 .accordion {
 	--circle-x: 1.8rem;
 	--circle-y: 0;
