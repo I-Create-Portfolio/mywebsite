@@ -754,13 +754,6 @@ html.no-scroll {
     scrollbar-gutter: stable;
 }
 
-html.no-scroll body {
-    height: 100%;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
-
 body {
     background-COLOR: white;
     color: #272727;
