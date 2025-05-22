@@ -1208,23 +1208,6 @@ html {
 	height: 100%;
 }
 
-body {
-	background-color: hsl(4, 91%, 60%);
-	font-family: Nunito, Arial, Helvetica, sans-serif;
-	font-weight: 600;
-	margin: 0;
-	display: grid;
-	place-items: center;
-	padding: 2rem 2rem;
-	min-height: 100%;
-}
-
-html,
-body {
-	scroll-behavior: smooth;
-	scroll-padding-top: 1rem;
-}
-
 main > h1 {
 	font-size: var(--size-header);
 	margin-bottom: 1.25rem;
