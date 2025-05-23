@@ -1226,6 +1226,7 @@ details > div > img {
 
 details > div > p {
   flex: 1;
+  padding: 10px;
 }
 
 details[open] > summary {
