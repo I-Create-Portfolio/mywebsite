@@ -1176,9 +1176,7 @@ body {
 
 .accordion {
   transform: translate(-50%, -50%);
-    position: absolute;
    margin: auto;
-  padding: 80px;
   left: 25%;
   width: 75%;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
