@@ -1177,9 +1177,9 @@ body {
 .accordion {
   transform: translate(-50%, -50%);
    margin: auto;
-  width: 50%;
+  width: 100%;
   border: 3px solid green;
-  padding: 10px;
+  padding-top: 100px;
 }
 .accordion input[name=panel] {
   display: none;
