@@ -1176,6 +1176,7 @@ body {
 
 .accordion {
   transform: translate(-50%, -50%);
+  position: relative;
    margin: auto;
   width: 100%;
   border: 3px solid green;
