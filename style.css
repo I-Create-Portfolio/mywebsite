@@ -1,3 +1,1179 @@
+body {
+  color: #fff;
+  font-family: Montserrat;
+}
+
+section, footer {
+  min-height: 15em;
+  padding: 0.2em 0;
+
+}
+
+.welcome-text {
+  padding-top: 80px;
+  left: 20;
+}
+.project-stories {
+  padding-top: 100px;
+  text-align: justify;
+}
+
+.profile-photo {
+  display: flex;
+  width: 470;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.figcaption {
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+}
+
+.profile-photo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+
+    --first-color: #4070F4;
+    --second-color: #0E2431;
+
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+
+    --mb1: .5rem;
+    --mb2: 1rem;
+    --mb3: 1.5rem;
+    --mb4: 2rem;
+    --mb5: 2.5rem;
+    --mb6: 3rem;
+
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+*, ::before, ::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
+}
+
+h1, h2, p { margin: 10; }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a { text-decoration: none; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb2);
+    margin-bottom: var(--mb4);
+    text-align: center;
+}
+
+    .section-title::after {
+        position: absolute;
+        content: '';
+        width: 64px;
+        height: 0.18rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 2rem;
+        background-color: var(--first-color);
+    }
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb2);
+    margin-right: var(--mb2);
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
+}
+
+.nav-item { margin-bottom: var(--mb4); font-size: 12px;}
+.nav-link { position: relative; color: #ffffff; }
+    .nav-link:hover { position: relative; }
+        .nav-link:hover::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            z-index: 9999;
+            height: 0.18rem;
+            left: 0;
+            top: 3rem;
+            
+        }
+
+.nav-logo { color: var(--second-color); 
+          font-size: 14px;}
+.nav-toggle {
+    color: var(--second-color);
+    font-size: 2rem;
+    cursor: pointer;
+  z-index: 10;
+}
+
+.home { height: calc(100vh - 3rem); row-gap: 1rem; }
+.home-data { align-self: center; }
+.home-title { font-size: var(--big-font-size); margin-bottom: var(--mb5); }
+.home-title-color { color: black; }
+.home-social { display: flex; flex-direction: column; }
+.home-social-icon {
+    width: max-content;
+    margin-bottom: var(--mb2);
+    font-size: 1.5rem;
+    color: var(--second-color);
+    transition: .3s;
+}
+
+    .home-social-icon:hover { color: var(--first-color); }
+
+.home-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 295px;
+}
+
+    .home-img img {
+        width: 295px;
+        height: 295px;
+        border-radius: 50%;
+    }
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #ffffff;
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+}
+
+    .button:hover { box-shadow: 0 10px 36px rgba(0, 0, 0, .15); }
+
+/*ABOUT*/
+
+.about-container { row-gap: 2rem; text-align: center; }
+.about-subtitle { margin-bottom: var(--mb2); }
+.about-img { justify-self: center; }
+    .about-img img { width: 200px; border-radius: .5rem; }
+
+/*SKILLS*/
+
+.skills-container { row-gap: 2rem; text-align: center; }
+.skills-subtitle { margin-bottom: var(--mb2); }
+.skills-text { margin-bottom: var(--mb4); }
+.skills-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: 0.5rem 1rem;
+    margin-bottom: var(--mb4);
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+}
+
+.skills-icon {
+    font-size: 2rem;
+    margin-right: var(--mb2);
+    color: var(--first-color);
+}
+
+.skills-names {
+    display: flex;
+    align-items: center;
+}
+
+.skills-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: 0.25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+}
+
+.skills-html { width: 95%; }
+.skills-css { width: 85%; }
+.skills-js { width: 65%; }
+.skills-ux { width: 85%; }
+.skills-img { border-radius: .5rem; }
+
+/*WORK*/
+
+.work { text-align: center; }
+.work-container { row-gap: 6rem; }
+.work-img {
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    
+    
+}
+    .work-img img { transition: 1s; cursor: pointer; }
+        .work-img img:hover { transform: scale(1.1); }
+
+/*CONTACT*/
+.contact-input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb4);
+}
+
+.contact-button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--second-color);
+    color: #ffffff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: var(--mb4);
+}
+
+.footer-social { margin-bottom: var(--mb4); }
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 var(--mb2);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 769px) {
+    body { margin: 0; }
+    .section { padding-top: 4rem; padding-bottom: 3rem; }
+    .section-title { margin-bottom: var(--mb6); }
+        .section-title::after { width: 80px; top: 3rem; }
+
+    .nav { height: calc(var(--header-height) + 1rem); }
+    .nav-list { display: flex; padding-top: 0; }
+    .nav-item { margin-left: var(--mb6); margin-bottom: 0; }
+    .nav-toggle { display: none; }
+    .nav-link { color: var(--second-color); }
+
+    .home { height: 100vh; }
+    .home-data { align-self: flex-end; }
+
+    .home-social {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .home-social-icon { margin-bottom: 0; margin-right: var(--mb4); }
+    .home-img { width: 457px; height: 475px; bottom: 15%; }
+
+    .about-container, .skills-container { 
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .about-img img { width: 300px; }
+
+    .work-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .contact-form { width: 460px; }
+    .contact-container { justify-items: center; }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid { margin-left: auto; margin-right: auto; }
+    .home-img { right: 10%; }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: .5s;
+    }
+
+    .show { right: 0; }
+}
+
+.logo-circle {
+  
+  background-color: fafafa;
+  padding: 2px 6px;
+  border-radius: 27%;
+}
+
+footer {
+  color: black;
+}
+
+.text-xl {
+  font-size: 3.5em;
+}
+
+.section-title {
+  margin-bottom: 1.5em;
+}
+
+.icons {
+  font-size: 2rem;
+  
+}
+.icons > a {
+  padding: 0 1em;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+ position: sticky;
+  top: 0;
+ bottom: 10;
+ z-index: 12;
+ height: 72px;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ddd;
+  
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.logo {
+  color: #dddddd;
+  float: left;
+  font-size: 18px;
+ text-style: bold;
+  font-family: Montserrat;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsl(220, 100%, 97%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.header .icon {
+  display: none;
+}
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #272727;
+  padding: 5px 5px;
+  font-family: Montserrat;
+  height: 3.6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #dddddd;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 4px;
+  font-family: Montserrat;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+ /* Style the navigation menu */
+.top-navigation {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.top-navigation #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.top-navigation a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.top-navigation a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.top-navigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+} 
+
+
+
+
+.project-stories {
+  width: 50%;
+  margin: auto;
+  font-family: Montserrat;
+}
+
+.project-stories p {
+  color:  #424A4D;
+  padding: 5px;
+  margin: 1%;
+}
+
+.project-stories h1 {
+  font-family: Montserrat;
+  font-size: 19px;
+  color:  #424A4D;
+  padding-top: 15px;
+  font-style: bold;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 480px){
+
+   .project-stories { 
+      width: 90%; 
+   }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .project-stories { 
+      width: 50%; 
+   }
+
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding-top: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+
+:root {
+    --dark-color-h: 334.29;
+    --dark-color-s: 32.03%;
+    --dark-color-l: 30%;
+    --light-color-h: 19.2;
+    --light-color-s: 30.86%;
+    --light-color-l: 84.12%;
+    --dark-color: hsl(var(--dark-color-h), var(--dark-color-s), var(--dark-color-l));
+    --light-color: hsl(var(--light-color-h), var(--light-color-s), var(--light-color-l));
+    --bg-color: var(--dark-color);
+    --text-color: var(--light-color);
+    --resources-bg-color: hsla(var(--dark-color-h), var(--dark-color-s), calc(var(--dark-color-l) - 10%), 0.75);
+    --resources-active-color: color-mix(in srgb, var(--light-color) 75%, transparent);
+    --resources-color: var(--text-color);
+}
+
+*,
+::after,
+::before {
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html.no-scroll {
+    background: hsl(var(--dark-color-h), var(--dark-color-s), calc(var(--dark-color-l) - 10%));
+    scrollbar-gutter: stable;
+}
+
+body {
+    background-COLOR: white;
+    color: #272727;
+    font-family: Montserrat;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    display: block;
+    margin: 2rem auto;
+    max-width: 75rem;
+    position: relative;
+    width: calc(100% - 1rem);
+}
+
+simple-masonry {
+    --column-count: 4;
+    --grid-gap-horizontal: 1.5rem;
+    --grid-gap-vertical: 1.5rem;
+    counter-reset: masonry-counter;
+    display: grid;
+    position: relative;
+    width: 100%;
+}
+
+simple-masonry+simple-masonry {
+    margin-top: calc(var(--grid-gap-vertical) * 4);
+}
+
+.grid-item {
+    background-color: white;
+    counter-increment: masonry-counter;
+    grid-area: 1/-1;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item a {
+    cursor: pointer;
+}
+
+.grid-item::after {
+    align-items: center;
+    background-color: black;
+    border-radius: .125rem;
+    bottom: .25rem;
+    color: black;
+   
+    display: flex;
+    font-size: .325rem;
+    height: 1.5rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    position: absolute;
+    right: .25rem;
+    text-align: center;
+    width: 1.5rem;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    color: black;
+    display: block;
+    font: 0/0 a;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    outline: none;
+    padding: 0;
+    position: relative;
+    text-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.lg-backdrop {
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+.resources-layer {
+    bottom: 0;
+    display: block;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
+
+.resources {
+    background: black;
+    display: grid;
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;
+    font-size: .6875rem;
+    font-weight: 300;
+    grid-auto-flow: column;
+    line-height: 1.3;
+    padding: .5rem;
+    pointer-events: auto;
+}
+
+.resources a {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+    padding: 0 .5rem;
+    place-content: center;
+    transition: color .2s ease-in-out;
+}
+
+.resources p {
+   color: white;
+}
+
+.resources a,
+.resources a:visited {
+    color: var(--resources-color);
+}
+
+.resources a:active,
+.resources a:focus-visible {
+    color: var(--resources-active-color);
+}
+
+.resources a:focus-visible {
+    outline: none;
+}
+
+.resources a:not(:first-child) {
+    border-inline-start: thin solid currentColor;
+}
+
+@media (max-width:75.04875em) {
+    simple-masonry {
+        --column-count: 4;
+        --grid-gap-horizontal: 1.25rem;
+        --grid-gap-vertical: 1.25rem;
+    }
+}
+
+@media (max-width:51.29875em) {
+    simple-masonry {
+        --column-count: 3;
+        --grid-gap-horizontal: 1rem;
+        --grid-gap-vertical: 1rem;
+    }
+}
+
+@media (max-width:36.04875em) {
+    simple-masonry {
+        --column-count: 2;
+        --grid-gap-horizontal: 0.75rem;
+        --grid-gap-vertical: 0.75rem;
+    }
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+    .resources a:active:not(:hover),
+    .resources a:hover {
+        color: var(--resources-active-color);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.player {
+  width: 600px;
+  height: 337px;
+  position: ;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  video {
+    width: 600px;
+    height: 337px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 10px solid #000;
+    box-shadow: 0 0 10px #000;
+  }
+  canvas {
+    position: absolute;
+    width: 600px;
+    height: 337px;
+    transform: scale(1.2);
+    -webkit-filter: blur(50px);
+    
+    z-index: -1;
+  }
+}
+
+
+
+
+
+
+
+@font-face {
+  src: url("https://fonts.cdnfonts.com/css/pp-neue-montreal") format("woff2");
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "PP Neue Montreal", sans-serif;
+  background-color: #f5f3ee;
+  color: #000;
+  padding: 1rem;
+}
+
+.projects-component {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transform-style: preserve-3d;
+}
+
+.projects-list::-webkit-scrollbar {
+  display: none;
+}
+
+.project-item {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.project-title-container {
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0;
+}
+
+.hover-indicator {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  /* Increased z-index to ensure visibility */
+}
+
+.hover-indicator.left {
+  left: -20px;
+}
+
+.hover-indicator.right {
+  right: -20px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  margin: 0;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.project-details {
+  width: 25%;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+.project-details .line-wrapper {
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+}
+
+.project-details.right {
+  text-align: right;
+}
+
+.detail-label {
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.detail-year {
+  margin-top: 0.5rem;
+}
+
+.project-image {
+  width: 40%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-height: 700px) {
+  .project-title {
+    font-size: 2.5rem;
+  }
+
+  .project-item {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-details {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .project-details.right {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .project-image {
+    width: 80%;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
+
+
 /* 
 * Typography
 */
@@ -20,24 +1196,7 @@
 /* 
 * Base
 */
-body {
-  font-family: "Open Sans", sans-serif;
-  background: #eee;
-}
-body:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-}
 
-/*
-* Accordion
-*/
-/* Basic Accordion Styles */
 .accordion {
   position: absolute;
   top: 50%;
