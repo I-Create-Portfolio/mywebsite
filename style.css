@@ -1177,13 +1177,9 @@ body {
 .accordion {
   transform: translate(-50%, -50%);
    margin: auto;
-  left: 40%;
-  padding-top: 100px;
-  width: 75%;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-  /* Radio Inputs */
-  /* Labels */
-  /* Panel Content */
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 .accordion input[name=panel] {
   display: none;
