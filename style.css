@@ -1174,29 +1174,6 @@ body {
 
 
 
-/* 
-* Typography
-*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-/*
-* Color Variables
-*/
-/*
-* Animation Variables
-*/
-/* 
-* Global
-*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-/* 
-* Base
-*/
-
 .accordion {
   transform: translate(-50%, -50%);
   width: 75%;
